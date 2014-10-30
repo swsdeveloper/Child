@@ -16,7 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    //NSLog(@"In viewDidLoad:");
+    
+    _childUserIDTextField.delegate = self;
+    
+    // ***************************
+    // * Set up Location Tracker *
+    // ***************************
+    
+    self.myLocationTracker = [[LocationTracker alloc] init];
+    
+    self.myLocationTracker.vc = self;
+    
+    [self.myLocationTracker prepareLocationTrackerForUse];
+    
+    [self.myLocationTracker runLocationTracker];
+
 }
 
 - (void)didReceiveMemoryWarning {

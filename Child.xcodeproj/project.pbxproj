@@ -14,6 +14,7 @@
 		0AA8442E1A01B724006AB813 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8442D1A01B724006AB813 /* Images.xcassets */; };
 		0AA844311A01B724006AB813 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8442F1A01B724006AB813 /* LaunchScreen.xib */; };
 		0AA8443D1A01B724006AB813 /* ChildTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8443C1A01B724006AB813 /* ChildTests.m */; };
+		0AA844491A01B74F006AB813 /* LocationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA844481A01B74F006AB813 /* LocationTracker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		0AA844361A01B724006AB813 /* ChildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8443B1A01B724006AB813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA8443C1A01B724006AB813 /* ChildTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildTests.m; sourceTree = "<group>"; };
+		0AA844461A01B730006AB813 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "../../../Common Files/Constants.h"; sourceTree = "<group>"; };
+		0AA844471A01B74F006AB813 /* LocationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTracker.h; sourceTree = "<group>"; };
+		0AA844481A01B74F006AB813 /* LocationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,9 @@
 		0AA8441F1A01B724006AB813 /* Child */ = {
 			isa = PBXGroup;
 			children = (
+				0AA844461A01B730006AB813 /* Constants.h */,
+				0AA844471A01B74F006AB813 /* LocationTracker.h */,
+				0AA844481A01B74F006AB813 /* LocationTracker.m */,
 				0AA844241A01B724006AB813 /* AppDelegate.h */,
 				0AA844251A01B724006AB813 /* AppDelegate.m */,
 				0AA844271A01B724006AB813 /* ViewController.h */,
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA844291A01B724006AB813 /* ViewController.m in Sources */,
+				0AA844491A01B74F006AB813 /* LocationTracker.m in Sources */,
 				0AA844261A01B724006AB813 /* AppDelegate.m in Sources */,
 				0AA844231A01B724006AB813 /* main.m in Sources */,
 			);
@@ -412,6 +420,7 @@
 				0AA844421A01B724006AB813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AA844431A01B724006AB813 /* Build configuration list for PBXNativeTarget "ChildTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				0AA844451A01B724006AB813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
